@@ -29,6 +29,10 @@ Install following softwares-
 17. Visit localhost:3000/ in browser
 
 
+## App Link
+The front end is hosted on [here](http://manojspace.com:3002/) and back end is hosted on [here](http://manojspace.com:5002/). You can use the app from any of these deployment URLs.
+
+
 #### Coding standards-
 
 For Javascript development please follow below link-

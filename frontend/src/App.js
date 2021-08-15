@@ -25,7 +25,7 @@ class Games extends React.Component {
 	getGames = (data) => {
 		//const {input, page} = data;
 		const {sort, sortBy, input, page} = this.state;
-		let api = "/api/games?page="+page+"&sort="+sort+"&sortBy="+sortBy+"&q="+(input?input:"");
+		let api = "http://manojspace.com:5002/api/games?page="+page+"&sort="+sort+"&sortBy="+sortBy+"&q="+(input?input:"");
 		axios.get(api).then(res => {
 			const {data} = res;
 			if (data && data.success) {
@@ -41,7 +41,7 @@ class Games extends React.Component {
 	}
 
 	updateGame = (data) => {
-		axios.post("/api/game/update", data).then(res => {
+		axios.post("http://manojspace.com:5002/api/game/update", data).then(res => {
 			const {data} = res;
 			if (data && data.success) {
 				const {page, input} = this.state;
